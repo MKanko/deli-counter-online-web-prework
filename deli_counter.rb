@@ -8,7 +8,7 @@ def line(deli_line)
     new_array = []
     deli_line.each_with_index {|item, index| new_array << "#{index + 1}. #{item}"}
     new_array.join(" ")
-    puts message_string + new_array
+    puts message_string + new_array.join(" ") 
 binding.pry
     new
   end
