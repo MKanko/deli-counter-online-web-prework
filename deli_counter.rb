@@ -7,7 +7,8 @@ def line(deli_line)
     message_string = "The line is currently:"
     new_array = []
     deli_line.each_with_index {|item, index| new_array << "#{index + 1}. #{item}"}
-    new_array.join
+    new_array.join(" ")
+    puts message_string + new_array 
 binding.pry
     new
   end
