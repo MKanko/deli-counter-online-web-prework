@@ -4,7 +4,7 @@ def line(deli_line)
   if deli_line.length == 0
     puts "The line is currently empty."
   else
-    message_string = "The line is currently:"
+    message_string = "The line is currently: "
     new_array = []
     deli_line.each_with_index {|item, index| new_array << "#{index + 1}. #{item}"}
     puts message_string + new_array.join(" ")
