@@ -1,10 +1,14 @@
+require 'pry'
+
 def line(deli_line)
   if deli_line.length == 0
     puts "The line is currently empty."
   else
-    message_string = "The line is currently:"
-    deli_line.each_with_index {|item, index| message_string << " #{index + 1}. #{item}"}
-    puts message_string
+#    message_string = "The line is currently:"
+    new_array = [] 
+    deli_line.each_with_index {|item, index| new_array << "The line is currently: #{index + 1}. #{item}"}
+binding.pry 
+    new
   end
 end
 
