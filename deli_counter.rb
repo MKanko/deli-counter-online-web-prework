@@ -5,9 +5,9 @@ def line(deli_line)
     puts "The line is currently empty."
   else
 #    message_string = "The line is currently:"
-    new_array = [] 
+    new_array = []
     deli_line.each_with_index {|item, index| new_array << "The line is currently: #{index + 1}. #{item}"}
-binding.pry 
+binding.pry
     new
   end
 end
@@ -37,5 +37,3 @@ end
 #    return katz_deli_line
 #  end
 #end
-
-  
